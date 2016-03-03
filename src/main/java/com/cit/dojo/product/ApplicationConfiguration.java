@@ -28,7 +28,7 @@ public class ApplicationConfiguration {
     
     @RequestMapping("/")
     public User home() {
-        return userService.getUsername();
+        return userService.getUsername("");
     }
 
     public static void main(String[] args) {
