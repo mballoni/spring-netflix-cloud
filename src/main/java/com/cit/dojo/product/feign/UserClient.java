@@ -9,6 +9,6 @@ import com.cit.dojo.domain.User;
 
 @FeignClient("users")
 public interface UserClient {
-    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}")
+    @RequestMapping(method = RequestMethod.GET, value = "/users/{id}", consumes = "application/json")
     User getUser(@PathVariable("id") String id);
 }

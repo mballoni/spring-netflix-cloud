@@ -3,20 +3,22 @@ package com.cit.dojo.domain;
 public class User {
 
     String name;
-    Long id;
-    
-    
+    String id;
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public Long getId() {
+
+    public String getId() {
         return id;
     }
-    public void setId(Long id) {
+
+    public void setId(String id) {
         this.id = id;
     }
-    
+
 }

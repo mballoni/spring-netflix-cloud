@@ -17,7 +17,7 @@ import com.cit.dojo.product.service.UserService;
 @Configuration
 @EnableAutoConfiguration
 @EnableEurekaClient
-@RibbonClient(name="product")
+@RibbonClient(name = "product")
 @EnableFeignClients
 @RestController
 @ComponentScan
@@ -25,7 +25,7 @@ public class ApplicationConfiguration {
 
     @Autowired
     private UserService userService;
-    
+
     @RequestMapping("/")
     public User home() {
         return userService.getUsername("1");
@@ -34,4 +34,5 @@ public class ApplicationConfiguration {
     public static void main(String[] args) {
         SpringApplication.run(ApplicationConfiguration.class, args);
     }
+
 }
