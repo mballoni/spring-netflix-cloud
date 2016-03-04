@@ -3,7 +3,7 @@ package com.cit.dojo.product.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cit.dojo.domain.User;
+import com.cit.dojo.product.domain.User;
 import com.cit.dojo.product.feign.UserClient;
 
 @Service

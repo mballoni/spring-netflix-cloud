@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.cit.dojo.domain.User;
+import com.cit.dojo.product.domain.User;
 
 @FeignClient("users")
 public interface UserClient {

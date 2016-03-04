@@ -1,4 +1,4 @@
-package com.cit.dojo.domain;
+package com.cit.dojo.product.domain;
 
 public class User {
 
